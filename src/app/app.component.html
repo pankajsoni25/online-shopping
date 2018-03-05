@@ -1,0 +1,24 @@
+<!-- <section class="heroContainer">
+     
+  <router-outlet></router-outlet>
+
+  <section class="footer row end-xs" *ngIf="authService.userLoggedIn">
+      <div class="footer__text">Powered by <span>Hashworks</span></div>
+  </section>
+  <section class="footer-full row center-xs" *ngIf="!authService.userLoggedIn">
+      <div class="footer__text">&#9400; 2017 Hashworks Pvt Ltd.All rights reserved.</div>
+  </section>
+</section> -->
+
+<div class="container-fluid">
+    <div class="col-md-offset-1">
+      <h1>
+        Welcome to !
+      </h1>
+    </div>
+    
+    <a routerLink="/users"> List Users</a>
+    <a style="margin-left:10px" routerLink="/add">Add User</a>
+    <br/>
+    <router-outlet></router-outlet>
+</div>
